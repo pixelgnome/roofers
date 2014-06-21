@@ -28,5 +28,21 @@ header .container {
 }
 
 footer {
-	border-top: 1px solid red;
+	border-top: 2px solid red;
+	background: #ccc;
+	padding: 1em 0;
 }
+
+
+.sidebar .panel-heading {
+	background: #0052A5;
+	border-color: #0052A5;
+	color: #eee;
+}
+	
+	
+.search-main,
+.btn-sell {
+	padding: 1.25em .5em;
+}
+	

@@ -66,18 +66,19 @@
     <header>
       <div class="container">
         <div class="logo col-lg-3"><img src="resources/images/logo@2x-white.png"  height="115" class="img-responsive"/></div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 search-main">
         	 <form  role="search">
-           
-                  <input type="text" class="form-control" placeholder="Search">
-              
-        		<button type="submit" class="btn btn-default">Submit</button>
+               <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for roofing items here">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                  </span>
+                </div><!-- /input-group -->
       		</form>
         </div>
-        <div class="logo col-lg-3">
-        	<a href="#" class="btn btn-lg btn-primary">Sell an Item</a>
-            <a href="#" class="btn btn-lg btn-primary">Sell an Item</a>
-        
+        <div class="col-lg-3 text-right btn-sell">
+        	<a href="#" class="btn btn-default">Sell an Item</a>
+            
         </div>
 
         
@@ -297,8 +298,41 @@
 
  <footer>
        <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-      </div>
+       		<!-- START left col -->
+        	<div class="col-lg-4">
+            	<ul class="nav">
+                	<li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div><!-- /left col -->
+            
+            <!-- START middle col -->
+        	<div class="col-lg-4">
+            	<ul class="nav">
+                	<li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div><!-- /middle col -->
+            
+            <!-- START rightcol -->
+        	<div class="col-lg-4">
+            	 <form role="form" action="#">
+                            <fieldset>
+                                    <label for="zipsearch">Enter Zip Code</label>
+                                    <input type="text" class="form-control">
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                               
+                             </fieldset>
+                           </form>
+            </div><!-- /right col -->
+            
+      </div><!-- /.container -->
  </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
