@@ -8,13 +8,13 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="/assets/ico/favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Roofer's Yard</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -46,15 +46,19 @@
       
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><a href="#">Sign On</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Your Account <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">View Your Yard</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Buying</a></li>
+            <li><a href="#">Selling</a></li>
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Feedback</a></li>
             <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Billing</a></li>
+            <li><a href="#">Settings</a></li>
           </ul>
         </li>
       </ul>
@@ -65,7 +69,9 @@
    
     <header>
       <div class="container">
-        <div class="logo col-lg-3"><img src="resources/images/logo@2x-white.png"  height="115" class="img-responsive"/></div>
+        <div class="logo col-lg-3">
+        	<a href="#" title="Roofer's Yard Home"><img src="resources/images/logo@2x-white.png"  /></a>
+         </div>
         <div class="col-lg-6 search-main">
         	 <form  role="search">
                <div class="input-group">
@@ -97,7 +103,12 @@
     
     <!-- END Main jumbotron -->
 
-    <div class="container">
+	<div class="container text-center advert">
+    	  <img data-src="holder.js/728x90" alt="Banner ad">
+    </div>
+
+ <div class="container">
+   
       <!-- Example row of columns -->
       <div class="row">
       
@@ -107,7 +118,7 @@
         
 			<!--START CHECKBOX FILTER 1 -->        
         	<div class="panel panel-default">
-            	<div class="panel-heading"><h3 class="panel-title">Filter by Type</h3></div>
+            	<div class="panel-heading"><h3 class="panel-title">Categories</h3></div>
                     <div class="panel-body">
                         <form role="form" action="#">
                             <fieldset>
@@ -142,28 +153,28 @@
       		
             <!--START CHECKBOX FILTER 1 -->        
         	<div class="panel panel-default">
-            	<div class="panel-heading"><h3 class="panel-title">Filter by Type</h3></div>
+            	<div class="panel-heading"><h3 class="panel-title">Filter by Price</h3></div>
                     <div class="panel-body">
                         <form role="form" action="#">
                             <fieldset>
                                    <div class="checkbox">
                                       <label>
                                         <input type="checkbox" value="">
-                                        Option One
+                                        $$
                                       </label>
                                     </div>
                                     
                                      <div class="checkbox">
                                       <label>
                                         <input type="checkbox" value="">
-                                        Option One
+                                        $$$
                                       </label>
                                     </div>
                                     
                                      <div class="checkbox">
                                       <label>
                                         <input type="checkbox" value="">
-                                        Option One
+                                        $$$$
                                       </label>
                                     </div>
                                     
@@ -295,44 +306,64 @@
 
     </div> <!-- /container -->
 
+<!-- Begin banner advert -->
+
+	<div class="container text-center advert">
+    	  <img data-src="holder.js/728x90" alt="Banner ad">
+    </div>
+<!-- /advert -->
 
  <footer>
        <div class="container">
        		<!-- START left col -->
-        	<div class="col-lg-4">
-            	<ul class="nav">
-                	<li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
+        	<div class="col-lg-3">
+            <h4>Help</h4>
+            	<ul class="nav-footer">
+                    <li><a href="#">Why Roofer's Yard?</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Support</a></li>
+				</ul>
             </div><!-- /left col -->
             
             <!-- START middle col -->
-        	<div class="col-lg-4">
-            	<ul class="nav">
-                	<li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
+        	<div class="col-lg-3">
+            	 <h4>About Roofer's Yard</h4>
+            	<ul class="nav-footer">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Press</a></li>
+                 </ul>
+            </div><!-- /middle col -->
+            
+            <div class="col-lg-3">
+            	 <h4>Search the Yards</h4>
+            	<ul class="nav-footer">
+                    <li><a href="#">Search by Zip</a></li>
+                    <li><a href="#">Search by City</a></li>
+                    <li><a href="#">Search by State</a></li>
+                 </ul>
             </div><!-- /middle col -->
             
             <!-- START rightcol -->
-        	<div class="col-lg-4">
+        	<div class="col-lg-3">
             	 <form role="form" action="#">
                             <fieldset>
-                                    <label for="zipsearch">Enter Zip Code</label>
+                            <label for="enewsletter">Subscribe to our Newsletter</label>
+                            <div class="input-group">
+                                    
                                     <input type="text" class="form-control">
-                                    <button type="submit" class="btn btn-default">Submit</button>
-                               
+                                    <span class="input-group-btn">
+                                    	<button type="submit" class="btn btn-default">Go</button>
+                                    </span>
+                             </div>  
                              </fieldset>
                            </form>
             </div><!-- /right col -->
             
       </div><!-- /.container -->
+      <div class="container text-muted text-right">
+            	<p class="copyright"> <strong>&copy; Roofer's Yard 2014</strong></p>
+            </div>
  </footer>
     <!-- Bootstrap core JavaScript
     ================================================== -->
