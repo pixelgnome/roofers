@@ -67,7 +67,7 @@ footer {
 
 .nav-footer {
 	margin: 0;
-	padding: 0;
+	padding: 1em 0;
 	list-style: none;
 }
 
@@ -90,6 +90,10 @@ footer {
 	background:#489CF2;
 }
 
+.small-logo {
+	padding: 1em 0;
+}
+
 /* Small devices (tablets, 768px and up) 
 
 Greater than 768 px, push logo left and tagline right. Alter 
@@ -97,7 +101,7 @@ tagline font size, alignment, and padding for larger dimensions.
 
 */
 @media (min-width: 360px) and (max-width: 768px) {  
-	.logo, .btn-sell  {
+	.logo, .btn-sell, .small-logo  {
 		text-align: center !important;
 		
 	}
@@ -106,7 +110,7 @@ tagline font size, alignment, and padding for larger dimensions.
 }	
 
 @media (min-width: 768px) and (max-width: 1024px) {  
-	.logo, .btn-sell {
+	.logo, .btn-sell, .small-logo  {
 		text-align: center !important;
 		
 	}
