@@ -82,17 +82,57 @@ footer {
 .panel .btn-default  {margin-top: 10px}
 
 .btn-primary {
-	background:#16D8A8;
+	background:#489CF2;
 	border-color: #999;
 }
 
 .btn-primary:hover {
-	background:#489CF2;
+	background:#eee;
+	color: #444;
 }
 
 .small-logo {
 	padding: 1em 0;
 }
+
+
+/* Sign in form */
+
+.form-signin {
+  max-width: 330px;
+  padding: 50px 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 
 /* Small devices (tablets, 768px and up) 
 
