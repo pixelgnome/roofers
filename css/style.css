@@ -70,6 +70,10 @@ header .well{
 header .logo{
 	padding: 0;
 }
+
+header .logo img{
+	max-width: 250px;
+}
 header .logo a{
 	color: #333;
 	font-size: 35px;
