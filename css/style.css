@@ -190,7 +190,8 @@ footer .column ul{
 	line-height: 22px;
 }
 footer .column ul a{
-	color: #a09f9f;
+	/*color: #a09f9f;*/
+	color: #eee;
 }
 footer .copyright{
 	padding: 10px;
@@ -342,4 +343,8 @@ background-color: #424242!important;
 footer .navbar-inverse {
 background-color: #E0162B;
 border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand {
+color: #fff;
 }
