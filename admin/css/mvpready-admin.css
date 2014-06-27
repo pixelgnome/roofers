@@ -843,7 +843,6 @@ fieldset[disabled] .btn-twitter.active {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff57bedd', endColorstr='#ff3db5d8', GradientType=0);*/
   border-top: 1px solid #ccc;
-  
   border-radius: 0 !important;
   margin-bottom: 0;
 }
@@ -2840,4 +2839,10 @@ body {
   color: #444;
   text-decoration: none;
   border-bottom: 1px solid #0052A5;
+}
+
+
+.messages {
+	padding: 1em 0;
+	border-bottom: 1px solid #ccc;
 }
