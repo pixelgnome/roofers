@@ -182,6 +182,9 @@ footer h4{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 16px;
+	margin-top: .75em;
+margin-bottom: .75em;
+font-family: 'source_sans_proregular';
 }
 footer .column ul{
 	font-size: 13px;
@@ -374,3 +377,8 @@ color: #fff;
 .terms {
 	padding: 1em 0 !important;
 }
+
+.navbar-nav-admin a {
+	font-size: 16px !important;
+}
+
