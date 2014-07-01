@@ -349,9 +349,28 @@ border-color: #080808;
 color: #fff;
 }
 
-.form-signin {
+.form-signin
+ {
 	max-width: 320px;
 	margin: 4em auto;
 	border:1px solid #ddd;
 	padding: 20px;
+}
+
+.form-registration
+ {
+	max-width: 750px;
+	margin: 4em auto;
+	border:1px solid #ddd;
+	padding: 20px;
+}
+
+.form-registration label {
+	padding: 10px 0 3px 0;
+	font-size: 1.25em;
+	font-weight:600;
+}
+
+.terms {
+	padding: 1em 0 !important;
 }
