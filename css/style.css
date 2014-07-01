@@ -348,3 +348,10 @@ border-color: #080808;
 .navbar-inverse .navbar-brand {
 color: #fff;
 }
+
+.form-signin {
+	max-width: 320px;
+	margin: 4em auto;
+	border:1px solid #ddd;
+	padding: 20px;
+}
