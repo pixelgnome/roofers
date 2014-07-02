@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dashboard - Buying - Roofer's Yard</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="admin/css/mvpready-admin.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Navigation -->
+    <nav class=" navbar-static-top text-right" role="navigation">
+        <div class="container">
+            
+            
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" class="active">Login</a></li>
+                    <li><a href="#">Create an Account</a></li>
+                    
+                   
+                </ul>
+          
+        </div>
+    </nav>
+    <!-- End Top Navigation -->
+	<header>
+	    <div class="container">
+	        <div class="row">
+
+	        	<!-- Logo -->
+	            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+	            	<div class="well logo">
+	            		<a href="index.html">
+	            			<img src="images/logo@2x.png" >
+	            		</a>
+	            		
+	            	</div>
+	            </div>
+	            <!-- End Logo -->
+
+				<!-- Search Form -->
+	            <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
+	            	<div class="well">
+	                    <form action="">
+	                        <div class="input-group">
+	                            <input type="text" class="form-control input-search" placeholder="Enter something to search"/>
+	                            <span class="input-group-btn">
+	                                <button class="btn btn-default no-border-left" type="submit"><i class="fa fa-search"></i></button>
+	                            </span>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	            <!-- End Search Form -->
+
+	            <!-- Shopping Cart List -->
+	            <div class="col-lg-3 col-md-4 col-sm-5">
+	                <div class="well">
+	                    <div class="btn-group btn-group-cart">
+	                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="pull-left"><i class="fa fa-shopping-cart icon-cart"></i></span>
+                                <span class="pull-left">Shopping Cart: 2 item(s)</span>
+                                <span class="pull-right"><i class="fa fa-caret-down"></i></span>
+                            </button>
+                            <ul class="dropdown-menu cart-content" role="menu">
+                                <li>
+                                    <a href="detail.html">
+                                        <b>Penn State College T-Shirt</b>
+                                        <span>x1 $528.96</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="detail.html">
+                                        <b>Live Nation ACDC Gray T-Shirt</b>
+                                        <span>x1 $428.96</span>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="cart.html">Total: $957.92</a></li>
+                            </ul>
+	                    </div>
+	                </div>
+	            </div>
+	            <!-- End Shopping Cart List -->
+	        </div>
+	    </div>
+    </header>
+
+	<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-admin" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- text logo on mobile view -->
+                <a class="navbar-brand visible-xs" href="index.html">Roofer's Yard</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-nav-admin">
+                    <li><a href="#"><span class="glyphicon glyphicon-globe"></span> View Your Shop</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Buying</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-tag"></span> Selling</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span> Feedback</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+                    <!--li class="nav-dropdown">
+                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Pages <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="typography.html">Typography</a></li>
+						</ul>
+                    </li-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+
+    <div class="container main-container">
+
+  		   <div class="container">
+
+      <div class="layout layout-main-right layout-stack-sm">
+
+        <div class="col-md-3 col-sm-4 layout-sidebar">
+
+          <div class="nav-layout-sidebar-skip">
+            <strong>Tab Navigation</strong> / <a href="#settings-content">Skip to Content</a>	
+          </div>
+
+          <ul id="myTab" class="nav nav-layout-sidebar nav-stacked">
+              <li class="active">
+              <a href="#profile-tab" data-toggle="tab">
+              <i class="fa fa-user"></i> 
+              &nbsp;&nbsp;Profile Settings
+              </a>
+            </li>
+
+            <li>
+              <a href="#password-tab" data-toggle="tab">
+              <i class="fa fa-lock"></i> 
+              &nbsp;&nbsp;Change Password
+              </a>
+            </li>
+
+            <li>
+              <a href="#messaging" data-toggle="tab">
+              <i class="fa fa-bullhorn"></i> 
+              &nbsp;&nbsp;Notifications
+              </a>
+            </li>
+
+            <li>
+              <a href="#payments" data-toggle="tab">
+              <i class="fa fa-dollar"></i> 
+              &nbsp;&nbsp;Payment Settings
+              </a>
+            </li>
+
+            <li>
+              <a href="#reports" data-toggle="tab">
+              <i class="fa fa-signal"></i> 
+              &nbsp;&nbsp;Configure Reports
+              </a>
+            </li>
+          </ul>
+
+        </div> <!-- /.col -->
+
+
+
+        <div class="col-md-9 col-sm-8 layout-main">
+
+          <div id="settings-content" class="tab-content stacked-content">
+
+            <div class="tab-pane fade in active" id="profile-tab">
+
+              <h3 class="content-title"><u>Edit Profile</u></h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+              <br><br>
+
+              <form action="./page-settings.html" class="form-horizontal">
+ <!--    
+                <div class="form-group">
+
+             <label class="col-md-3">Avatar</label>
+
+                  <div class="col-md-7">
+                    <div class="fileupload fileupload-new" data-provides="fileupload">
+                      <div class="fileupload-new thumbnail" style="width: 180px; height: 180px;">
+                        <img src="./img/avatars/avatar-1-lg.jpg" alt="Profile Avatar" />
+                      </div>
+
+                      <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 200px; line-height: 20px;"></div>
+
+                      <div>
+                        <span class="btn btn-default btn-file">
+                          <span class="fileupload-new">Select image</span>
+                          <span class="fileupload-exists">Change</span>
+                          <input type="file" />
+                        </span>
+
+                        <a href="#" class="btn btn-default fileupload-exists" data-dismiss="fileupload">Remove</a>
+                      </div> <!-- /div 
+
+                    </div> <!-- /.fileupload 
+
+                  </div> <!-- /.col 
+
+                </div> <!-- /.form-group 
+
+-->
+
+
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">First Name</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="first-name" value="Rod" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Last Name</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="last-name" value="Howard" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Email Address</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="email-address" value="rod@example.com" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Website</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="website" value="http://jumpstartthemes.com" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+<h3 class="content-title"><u>Shipping Address</u></h3>
+
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Street Address</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="address1" value="3397 Reynard Way" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3"></label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="address2" value="suite 10" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">City</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="website" value="San Diego" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">State</label>
+
+                  <div class="col-md-7">
+                    <select name="state" class="form-control">
+                    		<option value="">Choose a State:</option>
+                    
+                    </select>
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+                
+                
+                <div class="form-group">
+
+                  <label class="col-md-3">Zip Code</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="zipcode" value="92103" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+                
+                
+                <div class="form-group">
+
+                  <label class="col-md-3">Phone Number</label>
+
+                  <div class="col-md-7">
+                    <input type="text" name="phone" value="619 555 5555" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+
+
+                <div class="form-group">
+                  <div class="col-md-7 col-md-push-3">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    &nbsp;
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                  </div> <!-- /.col -->
+                </div> <!-- /.form-group -->
+
+              </form>
+
+
+            </div> <!-- /.tab-pane -->
+
+
+
+            <div class="tab-pane fade" id="password-tab">
+
+              <h3 class="content-title"><u>Change Password</u></h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+
+              <br><br>
+
+              <form action="./page-settings.html" class="form-horizontal">
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Old Password</label>
+
+                  <div class="col-md-7">
+                    <input type="password" name="old-password" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <hr>
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">New Password</label>
+
+                  <div class="col-md-7">
+                    <input type="password" name="new-password-1" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">New Password Confirm</label>
+
+                  <div class="col-md-7">
+                    <input type="password" name="new-password-2" class="form-control" />
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <div class="col-md-7 col-md-push-3">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    &nbsp;
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+              </form>
+
+            </div> <!-- /.tab-pane -->
+
+
+
+            <div class="tab-pane fade" id="messaging">
+
+              <h3 class="content-title"><u>Notification Settings</u></h3>
+
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+
+              <br><br>
+
+              <form action="./page-settings.html" class="form form-horizontal">
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Toggle Notifications</label>
+
+                  <div class="col-md-7">
+
+                    <div class="checkbox">
+                      <label>
+                      <input value="" type="checkbox" checked>
+                      Send me security emails
+                      </label>
+                    </div> <!-- /.checkbox -->
+
+                    <div class="checkbox">
+                      <label>
+                      <input value="" type="checkbox" checked>
+                      Send system emails
+                      </label>
+                    </div> <!-- /.checkbox -->
+
+                    <div class="checkbox">
+                      <label>
+                      <input value="" type="checkbox">
+                      Lorem ipsum dolor sit amet
+                      </label>
+                    </div> <!-- /.checkbox -->
+
+                    <div class="checkbox">
+                      <label>
+                      <input value="" type="checkbox">
+                      Laborum, quam iure quibusdam
+                      </label>
+                    </div> <!-- /.checkbox -->
+
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <label class="col-md-3">Email for Notifications</label>
+
+                  <div class="col-md-7">
+                    <select name="email_notifications" class="form-control">
+                      <option value="1">john@mvpready.com</option>
+                      <option value="2">mary@mvpready.com</option>
+                      <option value="3">chris@mvpready.com</option>
+                    </select>
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+
+                <div class="form-group">
+
+                  <div class="col-md-7 col-md-push-3">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    &nbsp;
+                    <button type="reset" class="btn btn-default">Cancel</button>
+                  </div> <!-- /.col -->
+
+                </div> <!-- /.form-group -->
+
+              </form>
+
+            </div> <!-- /.tab-pane -->
+
+
+            <div class="tab-pane fade" id="payments">
+
+              <h3 class="content-title"><u>Payment Settings</u></h3>
+              
+              <div class="col-md-10">
+              	<p>You will be billed through Paypal at the address jerry@gmail.com.</p>
+                
+                <button class="btn btn-default">Modify Payment Settings</button><br><br><br>
+                
+                <div class="form-group">
+                	<label for="cc" class="control-label"><input type="radio"> Credit Card (Mastercard, Visa, AMEX)</label><br>
+                    <label for="paypal" class="control-label"><input type="radio"> Paypal</label>
+                
+                </div>
+                
+                
+                <div class="col-md-10 account-bg">
+                	<div class="form-group">
+                        <label>Card Number</label>
+                        <input type="text" name="cardnumber" class="form-control" />
+                    </div>
+                    
+                   <div class="form-group">
+                    	<label class="">Expiration Date</label>
+                     
+                       <div class="col-md-6">
+                        <input type="text" name="exp-month" class="form-control" /> 
+                        
+                  		  </div>
+                          <div class="col-md-6">
+                          <input type="text" name="exp-year" class="form-control" />
+                           </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="clear">Zip Code</label>
+               
+                        <input type="text" name="cc-zip" class="form-control" />
+                       
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>CVV</label>
+                        <input type="text" name="cvv" class="form-control" />
+                    </div>
+
+                
+                
+                </div>
+              
+              
+              
+              </div>
+
+            </div> <!-- /.tab-pane -->
+
+            <div class="tab-pane fade" id="reports">
+              <h3 class="content-title"><u>Reports Settings</u></h3>
+              <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+            </div> <!-- /.tab-pane -->
+
+          </div> <!-- /.tab-content -->
+
+        </div> <!-- /.col -->
+
+      </div> <!-- /.row -->
+
+
+    </div> <!-- /.container -->
+       
+
+
+	</div> <!-- . container main-container -->
+
+	<footer>
+    	<div class="container">
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Information</h4>
+        			<ul>
+        				<li><a href="about.html">About Us</a></li>
+        				<li><a href="typography.html">Policy Privacy</a></li>
+        				<li><a href="typography.html">Terms and Conditions</a></li>
+        				<li><a href="typography.html">Shipping Methods</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Categories</h4>
+        			<ul>
+        				<li><a href="catalogue.html">Cras justo odio</a></li>
+        				<li><a href="catalogue.html">Dapibus ac facilisis in</a></li>
+        				<li><a href="catalogue.html">Morbi leo risus</a></li>
+        				<li><a href="catalogue.html">Porta ac consectetur ac</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Customer Service</h4>
+        			<ul>
+        				<li><a href="contact.html">Contact Us</a></li>
+        				<li><a href="#">YM: erwin_heldy</a></li>
+        				<li><a href="#">Telp: 087825376xxx</a></li>
+        				<li><a href="#">Email: erwin.heldy@gmail.com</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Follow Us</h4>
+        			<ul class="social">
+        				<li><a href="#">Google Plus</a></li>
+        				<li><a href="#">Facebook</a></li>
+        				<li><a href="#">Twitter</a></li>
+        				<li><a href="#">RSS Feed</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        </div>
+        <div class="navbar-inverse text-center copyright">
+        	Copyright &copy; 2013 Roofer's Yard, LLC. 
+        </div>
+    </footer>
+
+    <a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
+    	<i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.blImageCenter.js"></script>
+    <script src="js/mimity.js"></script>
+</body>
+</html>
