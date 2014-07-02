@@ -575,16 +575,16 @@ fieldset[disabled] .btn-twitter.active {
   border-color: #28a4c9;
 }
 .btn-primary {
-  background-image: -webkit-linear-gradient(top, #d74b4b 0%, #bb2a2a 100%);
+ /* background-image: -webkit-linear-gradient(top, #d74b4b 0%, #bb2a2a 100%);
   background-image: linear-gradient(to bottom, #d74b4b 0%, #bb2a2a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd74b4b', endColorstr='#ffbb2a2a', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);*/
   background-repeat: repeat-x;
   border-color: #b32828;
 }
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #bb2a2a;
+  background-color: #428bca;
   background-position: 0 -15px;
   border-color: #b32828;
 }
