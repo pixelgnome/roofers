@@ -597,51 +597,142 @@
 
               <h3 class="content-title"><u>Payment Settings</u></h3>
               
-              <div class="col-md-10">
+              <div class="col-md-12">
               	<p>You will be billed through Paypal at the address jerry@gmail.com.</p>
                 
                 <button class="btn btn-default">Modify Payment Settings</button><br><br><br>
                 
                 <div class="form-group">
-                	<label for="cc" class="control-label"><input type="radio"> Credit Card (Mastercard, Visa, AMEX)</label><br>
-                    <label for="paypal" class="control-label"><input type="radio"> Paypal</label>
-                
-                </div>
-                
-                
-                <div class="col-md-10 account-bg">
-                	<div class="form-group">
-                        <label>Card Number</label>
-                        <input type="text" name="cardnumber" class="form-control" />
-                    </div>
-                    
-                   <div class="form-group">
-                    	<label class="">Expiration Date</label>
-                     
-                       <div class="col-md-6">
-                        <input type="text" name="exp-month" class="form-control" /> 
-                        
-                  		  </div>
-                          <div class="col-md-6">
-                          <input type="text" name="exp-year" class="form-control" />
-                           </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label class="clear">Zip Code</label>
-               
-                        <input type="text" name="cc-zip" class="form-control" />
-                       
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>CVV</label>
-                        <input type="text" name="cvv" class="form-control" />
-                    </div>
+                	<label class="control-label">Select a payment type</label>
 
+                	<div class="radio">
+                    	<label><input type="radio"  name="payment-type" value="cc" data-toggle="collapse" data-target="#CreditCard"> Credit Card (Mastercard, Visa, AMEX)</label>
+                    </div>
+                    <div class="radio"><label><input type="radio"  name="payment-type" value="paypal" data-toggle="collapse" data-target="#PayPal"> Paypal</label></div>
+                   
+                
+                </div>
+                
+                <!-- Start #CreditCard-->
+                
+                <div class="col-md-10 account-bg form-group collapse in" id="CreditCard">
+              
+					<form class="form-horizontal">
+       
+    
+          <!-- Name -->
+          <div class="control-group">
+            <label class="control-label"  for="username">Card Holder's Name</label>
+            <div class="controls">
+              <input type="text" id="username" name="username" placeholder="" class="form-control">
+            </div>
+          </div>
+     
+          <!-- Card Number -->
+          <div class="control-group">
+            <label class="control-label" for="email">Card Number</label>
+            <div class="controls">
+              <input type="text" id="email" name="email" placeholder="" class="form-control">
+            </div>
+          </div>
+     
+          <!-- Expiry-->
+          <div class="control-group">
+            <label class="control-label" for="password">Card Expiry Date</label>
+            <div class="controls">
+              <select class="span3" name="expiry_month" id="expiry_month">
+                <option value="01">Jan (01)</option>
+                <option value="02">Feb (02)</option>
+                <option value="03">Mar (03)</option>
+                <option value="04">Apr (04)</option>
+                <option value="05">May (05)</option>
+                <option value="06">June (06)</option>
+                <option value="07">July (07)</option>
+                <option value="08">Aug (08)</option>
+                <option value="09">Sep (09)</option>
+                <option value="10">Oct (10)</option>
+                <option value="11">Nov (11)</option>
+                <option value="12">Dec (12)</option>
+              </select>
+              <select class="span3" name="expiry_year" id="expiry_year">
+                <option value="13">2013</option>
+                <option value="14">2014</option>
+                <option value="15">2015</option>
+                <option value="16">2016</option>
+                <option value="17">2017</option>
+                <option value="18">2018</option>
+                <option value="19">2019</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+              </select>
+            </div>
+          </div>
+     
+          <!-- CVV -->
+          <div class="control-group">
+            <label class="control-label" for="password_confirm">Card CVV</label>
+            <div class="controls">
+              <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="span2">
+            </div>
+          </div>
+     
+          <!-- Save card -->
+          <div class="control-group">
+            <div class="controls">
+              <label class="checkbox" for="save_card">
+                <input type="checkbox" id="save_card" value="option1">
+                Save card on file?
+              </label>
+            </div>
+          </div>
+     
+            <!-- Submit -->
+          <div class="control-group">
+            <div class="controls">
+              <button class="btn btn-success">Save Card</button>
+            </div>
+          </div>
+        <br>
+      </form>
                 
                 
                 </div>
+                <!-- / #CreditCard-->
+                
+                <!-- Start #paypal-->
+                
+                <div class="col-md-10 account-bg form-group collapse in" id="PayPal">
+              
+					<form class="form-horizontal">
+       
+    
+         
+                     
+                          <!-- PayPal email -->
+                          <div class="control-group">
+                            <label class="control-label" for="email">PayPal Address</label>
+                            <div class="controls">
+                              <input type="text" id="email" name="email" placeholder="sal@sal.com" class="form-control">
+                            </div>
+                          </div>
+                     
+                     <br>
+                         
+                            <!-- Submit -->
+                          <div class="control-group">
+                            <div class="controls">
+                              <button class="btn btn-success">Save PayPal Email Address</button>
+                            </div>
+                          </div>
+                          <br>
+                        
+                      </form>
+                                
+                                
+                </div>
+                <!-- / #paypal-->
               
               
               
@@ -729,5 +820,10 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.blImageCenter.js"></script>
     <script src="js/mimity.js"></script>
+       <script>
+    	
+    	$(".form-group.collapse").collapse();
+		
+    </script>
 </body>
 </html>
