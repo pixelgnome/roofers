@@ -382,3 +382,6 @@ color: #fff;
 	font-size: 16px !important;
 }
 
+.collapse.CreditCard {
+	display: block;
+}

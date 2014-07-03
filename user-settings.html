@@ -606,16 +606,16 @@
                 	<label class="control-label">Select a payment type</label>
 
                 	<div class="radio">
-                    	<label><input type="radio"  name="payment-type" value="cc" data-toggle="collapse" data-target="#CreditCard"> Credit Card (Mastercard, Visa, AMEX)</label>
+                    	<label><input type="radio"  name="payment-type" value="cc" class="CreditCard"> Credit Card (Mastercard, Visa, AMEX)</label>
                     </div>
-                    <div class="radio"><label><input type="radio"  name="payment-type" value="paypal" data-toggle="collapse" data-target="#PayPal"> Paypal</label></div>
+                    <div class="radio"><label><input type="radio"  name="payment-type" value="paypal" class="PayPal"> Paypal</label></div>
                    
                 
                 </div>
                 
                 <!-- Start #CreditCard-->
                 
-                <div class="col-md-10 account-bg form-group collapse in" id="CreditCard">
+                <div class="col-md-10 account-bg form-group collapse CreditCard">
               
 					<form class="form-horizontal">
        
@@ -703,7 +703,7 @@
                 
                 <!-- Start #paypal-->
                 
-                <div class="col-md-10 account-bg form-group collapse in" id="PayPal">
+                <div class="col-md-10 account-bg form-group collapse PayPal">
               
 					<form class="form-horizontal">
        
@@ -822,7 +822,12 @@
     <script src="js/mimity.js"></script>
        <script>
     	
-    	$(".form-group.collapse").collapse();
+    	$('input[type=radio]').on('change', function () {
+			if (!this.checked) return
+			$('.collapse').not($('div.' + $(this).attr('class'))).slideUp();
+			$('.collapse.' + $(this).attr('class')).slideDown();
+		});
+		
 		
     </script>
 </body>
