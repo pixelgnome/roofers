@@ -46,7 +46,7 @@ select{border:1px solid #ddd;padding:3px}
 body{
 	font-family: 'source_sans_proregular';
 	color:#333;
-	background: #f1f1f1
+	background: #fff;
 }
 .main-container{
 	padding-top: 20px;
@@ -54,7 +54,8 @@ body{
 }
 header{
 	padding-top: 10px;
-	background: #f1f1f1;
+	/*background: #f1f1f1;*/
+	background: #0052A5;
 }
 header .well{
 	-webkit-box-shadow: none;
@@ -201,8 +202,8 @@ footer .copyright{
 	color: #ccc;
 }
 .navbar{
-	/*background: #4a4a4a;*/
-	background: #0052A5;
+	background: #333;
+	/*background: #0052A5;*/
 	margin-bottom: 0;
 }
 
@@ -228,7 +229,7 @@ footer .copyright{
 	font-family: 'source_sans_proregular';
 	font-size: 20px;
 	text-transform: uppercase;
-	color: #fff!important;
+	color: #eee !important;
 	-ms-transition: all 100ms ease-in-out 0s ;
 	-moz-transition: all 100ms ease-in-out 0s ;
 	-webkit-transition: all 100ms ease-in-out 0s ;
@@ -254,13 +255,15 @@ background-color: #424242!important;
 }
 
 .navbar li a:hover, .navbar li a.active{
-	background-color: #428bca!important;
+	background-color: #666 !important;
 }
 .navbar li.nav-dropdown .caret{
 	border-top-color: #fff;
 	border-bottom-color: #fff;
 }
 @media (min-width: 768px) {
+	
+	
 	.navbar li.nav-dropdown ul li a{
 		font-family: Arial;
 		font-size: 15px;
