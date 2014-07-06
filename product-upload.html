@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>About Us - Roofer's Yard</title>
+    <title>Product Upload- Roofer's Yard</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -217,13 +217,136 @@
                     		<div class="panel panel-default">
                             	<div class="panel-title bg-upload">Describe your Item</div>
                                 <div class="panel-body">
-                                    			
+                                    		<textarea class="form-control" placeholder="gonna look for a text editor plugin"></textarea>
+                                            	
 											
                                     
                                 </div><!-- / .panel-body -->
                             </div><!-- / .panel .panel-default -->
                     
                      	<!--End / Product Description -->
+                        
+                        
+                        
+                          <!-- Payment Paypal -->
+                    		<div class="panel panel-default">
+                            	<div class="panel-title bg-upload">Payment Type</div>
+                                <div class="panel-body">
+                                    
+                                    
+                                
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">PayPal Checkout</label>
+                                        <label class="text-muted"><input type="checkbox" class="checkbox-inline"> Let customers pay with PayPal</label>
+                                        
+                                        </div>
+                                        <div class="form-group">
+                                        <label class="control-label" for="paypal-email-address">*PayPal Email</label>
+                                          <input type="text" class="form-control" name="paypal-email-address">
+                                       </div>
+                                       
+                                       <div class="form-group">
+                                        <label class="control-label" for="payment Policy">*Payment Policy</label>
+                                          <textarea class="form-control" rows="5" placeholder="Please pay immediately when you use Buy It Now. To negotiate price and discuss other shipping and payment options, please use Make an Offer." name="payment Policy"></textarea>
+                                       </div>
+                                      
+                                    </div>
+                                    
+                                    <div class="col-md-2"></div>
+                                    <div class="form-group col-md-4">
+                                        <label class="control-label" for="item-make">Manual Payment Types</label>
+                                        <p>In person or over the phone</p>
+                                        <label><input type="checkbox" class="checkbox-inline"> Cash</label><br>
+                                        <label><input type="checkbox" class="checkbox-inline"> Check</label><br>
+                                      <label><input type="checkbox" class="checkbox-inline"> Credit Card</label><br>
+                                        <label><input type="checkbox" class="checkbox-inline"> Wire Transfer</label><br>
+                                        <label><input type="checkbox" class="checkbox-inline"> Money Order</label><br>
+                                        <label><input type="checkbox" class="checkbox-inline"> Other</label>
+                                    </div>
+                                    
+                                </div><!-- / .panel-body -->
+                            </div><!-- / .panel .panel-default -->
+                    
+                     	<!--End / Payment Paypal-->
+                        
+                        
+                        
+                          <!-- Shipping -->
+                    		<div class="panel panel-default">
+                            	<div class="panel-title bg-upload">Shipping Options</div>
+                                <div class="panel-body">
+                                    
+                                    
+                                
+                                    <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Shipping Methods</label><br>
+                                        <label class="text-muted"><input type="checkbox" class="checkbox-inline"> Local Pickup</label><br>
+                                        <label class="text-muted"><input type="checkbox" class="checkbox-inline"> Shipping</label><br>
+                                        
+                                        </div>
+                                        <div class="form-group">
+                                        <label class="control-label" for="shipping-price">Shipping Cost</label>
+                                        <div class="input-group">
+                                          <span class="input-group-addon">$</span>
+                                          <input type="text" class="form-control" name="shipping-price">
+                                          <span class="input-group-addon">.00</span>
+                                        </div>
+                                       </div>
+                                       
+                                                                            
+                                    </div>
+                                    
+                                    
+                                    <div class="form-group col-md-6">
+                                         
+                                        <label class="control-label" for="shipping-policy">*Shipping Policy</label>
+                                          <textarea class="form-control" rows="5" placeholder="I will ship with tracking to the continental United States. Alaska, Hawaii, and international shipments may incur additional charges.." name="shipping-policy"></textarea>
+                                     
+                                    </div>
+                                    
+                                    <div class="clearfix"></div>
+                                    <hr>
+                                    <div class="col-md-12"><h4>Where are you shipping from?</h4></div>
+                                    <div class="form-group col-md-4">
+                                    	<label class="control-label">City</label>
+                                    	 <select class="form-control">
+                                            <option value="">San Diego</option>
+                                            <option value="">Los Angeles</option>
+                                         </select>
+                                    </div>
+                                    
+                                    <div class="form-group col-md-4">
+                                    	<label class="control-label">State</label>
+                                    	 <select class="form-control">
+                                            <option value="">California</option>
+                                            <option value="">Nevada</option>
+                                         </select>
+                                    </div>
+                                    
+                                    <div class="form-group col-md-4">
+                                    	<label class="control-label">Country</label>
+                                    	 <select class="form-control">
+                                            <option value="">United States</option>
+                                            <option value="">Canada</option>
+                                         </select>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div><!-- / .panel-body -->
+                            </div><!-- / .panel .panel-default -->
+                            
+                            
+                            <div class="form-group">
+                            	<button class="btn btn-primary btn-lg">Save and Review Listing <span class="glyphicon glyphicon-chevron-right"></span></button> 
+                            
+                            </div>
+                    
+                     	<!--End / Shipping-->
                     
                     
 	            </div>
@@ -263,55 +386,63 @@
         </div>
 	</div>
 
-	<footer>
-        <div class="container">
-            <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="column">
-                    <h4>Information</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="typography.html">Policy Privacy</a></li>
-                        <li><a href="typography.html">Terms and Conditions</a></li>
-                        <li><a href="typography.html">Shipping Methods</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="column">
-                    <h4>Categories</h4>
-                    <ul>
-                        <li><a href="catalogue.html">Cras justo odio</a></li>
-                        <li><a href="catalogue.html">Dapibus ac facilisis in</a></li>
-                        <li><a href="catalogue.html">Morbi leo risus</a></li>
-                        <li><a href="catalogue.html">Porta ac consectetur ac</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="column">
-                    <h4>Customer Service</h4>
-                    <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">YM: erwin_heldy</a></li>
-                        <li><a href="#">Telp: 087825376xxx</a></li>
-                        <li><a href="#">Email: erwin.heldy@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="column">
-                    <h4>Follow Us</h4>
-                    <ul class="social">
-                        <li><a href="#">Google Plus</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">RSS Feed</a></li>
-                    </ul>
-                </div>
-            </div>
+	<footer class="newfooter">
+    	<div class="container">
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Information</h4>
+        			<ul>
+        				<li><a href="about.html">About Us</a></li>
+        				<li><a href="typography.html">Policy Privacy</a></li>
+        				<li><a href="typography.html">Terms and Conditions</a></li>
+        				<li><a href="typography.html">Shipping Methods</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Customer Service</h4>
+        			<ul>
+        				<li><a href="#">Why Roofer's Yard?</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Support</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Follow Us</h4>
+        			<ul class="social">
+        				<li><a href="#">Google Plus</a></li>
+        				<li><a href="#">Facebook</a></li>
+        				<li><a href="#">Twitter</a></li>
+        				<li><a href="#">RSS Feed</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="col-lg-3 col-md-3 col-sm-6">
+        		<div class="column">
+        			<h4>Subscribe to our Newsletter</h4>
+                    
+                     <form role="form" action="#">
+                            <fieldset>
+                            
+                            <div class="input-group">
+                                    
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn">
+                                    	<button type="submit" class="btn btn-default">Go</button>
+                                    </span>
+                             </div>  
+                             </fieldset>
+                           </form>
+                          
+        			
+        		</div>
+        	</div>
         </div>
         <div class="navbar-inverse text-center copyright">
-            Copyright &copy; 2013 Roofer's Yard, LLC. 
+        	Copyright &copy; 2013 Roofer's Yard, LLC. 
         </div>
     </footer>
 
