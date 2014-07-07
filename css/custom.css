@@ -4,5 +4,12 @@
 	padding: 3px 10px;
 }
 
+.panel-title.bg-info {
+	padding: 3px 10px;
+}
 
-
+.payment-panel  ul {
+	list-style: none !important;
+	margin: 0;
+	padding: 0;
+}
